@@ -95,7 +95,8 @@
 		ul ul {
 			margin-top: -1px;
 		}
-		ul.sub-menu li a, ul.sub-menu ul li a {
+		ul.sub-menu li a, ul.sub-menu ul li a,
+		ul.children li a, ul.children ul li a {
 			min-width: 100%;
 			@include rem( 'font-size', 15px );
 			@include rem('padding', $base/2 $gutter/1.3);
@@ -156,7 +157,8 @@
 			}
 		}
 		@include for(medium-screens){
-			li.menu-item-has-children > a:after {
+			li.menu-item-has-children > a:after,
+			li.page_item_has_children > a:after {
 				border-color: $meta transparent transparent;
 			    border-style: solid;
 			    border-width: 4px;
@@ -168,15 +170,17 @@
 			    top: 50%;
 			    width: 0;
 			}
-			li.menu-item-has-children > a {
+			li.menu-item-has-children > a,
+			li.page_item_has_children > a {
 				@include rem( 'padding-right', $gutter );
 			}
-			li li.menu-item-has-children > a:after {
+			li li.menu-item-has-children > a:after,
+			li li.page_item_has_children > a:after {
 				border-color: transparent transparent transparent $meta;
 				top: 45%;
 			}
 		}
-		.sub-menu {
+		.sub-menu, .children {
 			padding: 0px;
 			margin: 0px;
 			border: 1px solid #e2e2e2;
@@ -203,7 +207,7 @@
 			}
 		}
 		@include for(medium-screens) {
-			.sub-menu {
+			.sub-menu, .children {
 				position: absolute;
 				clip: rect(1px, 1px, 1px, 1px);
 				overflow: hidden;
@@ -219,6 +223,7 @@
 		}
 		@include for(medium-screens) {
 			li:hover > ul.sub-menu,
+			li:hover > ul.children,
 			li:hover > ul,
 			li li:hover > ul {
 				clip: inherit;
