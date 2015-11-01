@@ -1,0 +1,479 @@
+# Copyright (C) 2015 FameThemes
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Patus 1.0.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2015-01-29 23:28:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.4.5\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the "
+"links below or a search?"
+msgstr ""
+
+#: 404.php:27
+msgid "Most Used Categories"
+msgstr ""
+
+#: 404.php:44
+#. translators: %1$s: smiley
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: archive.php:27
+msgid "Author: %s"
+msgstr ""
+
+#: archive.php:30
+msgid "Day: %s"
+msgstr ""
+
+#: archive.php:33
+msgid "Month: %s"
+msgstr ""
+
+#: archive.php:36
+msgid "Year: %s"
+msgstr ""
+
+#: archive.php:39
+msgid "Asides"
+msgstr ""
+
+#: archive.php:42
+msgid "Galleries"
+msgstr ""
+
+#: archive.php:45
+msgid "Images"
+msgstr ""
+
+#: archive.php:48
+msgid "Videos"
+msgstr ""
+
+#: archive.php:51
+msgid "Quotes"
+msgstr ""
+
+#: archive.php:54
+msgid "Links"
+msgstr ""
+
+#: archive.php:57
+msgid "Statuses"
+msgstr ""
+
+#: archive.php:60
+msgid "Audios"
+msgstr ""
+
+#: archive.php:63
+msgid "Chats"
+msgstr ""
+
+#: archive.php:66
+msgid "Archives"
+msgstr ""
+
+#: comments.php:35 comments.php:51
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:36 comments.php:52
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:37 comments.php:53
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:63
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:16
+msgid "&copy;"
+msgstr ""
+
+#: footer.php:17
+msgid " - Theme: %1$s by %2$s."
+msgstr ""
+
+#: footer.php:17
+msgid "http://www.famethemes.com/"
+msgstr ""
+
+#: functions.php:46
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:84
+msgid "Sidebar"
+msgstr ""
+
+#: header.php:22
+msgid "Skip to content"
+msgstr ""
+
+#: inc/customizer.php:21
+msgid "General Settings"
+msgstr ""
+
+#: inc/customizer.php:32
+msgid "Sidebar Position:"
+msgstr ""
+
+#: inc/customizer.php:50
+msgid "Right Footer Text:"
+msgstr ""
+
+#: inc/customizer.php:57
+msgid "Social Settings"
+msgstr ""
+
+#: inc/customizer.php:68
+msgid "RSS Feed:"
+msgstr ""
+
+#: inc/customizer.php:81
+msgid "Email Link:"
+msgstr ""
+
+#: inc/customizer.php:94
+msgid "Twitter Link:"
+msgstr ""
+
+#: inc/customizer.php:107
+msgid "Facebook Link:"
+msgstr ""
+
+#: inc/customizer.php:120
+msgid "Google Plus Link:"
+msgstr ""
+
+#: inc/customizer.php:135
+msgid "Primary Color"
+msgstr ""
+
+#: inc/customizer.php:149
+msgid "Secondary Color"
+msgstr ""
+
+#: inc/customizer.php:178
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/customizer.php:179
+msgid "Right Sidebar"
+msgstr ""
+
+#: inc/extras.php:72
+msgid "Page %s"
+msgstr ""
+
+#: inc/template-tags.php:24
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:69 inc/template-tags.php:91 inc/template-tags.php:97
+#. translators: used between list items, there is a space after the comma
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:71
+msgid " in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:76
+msgid "0 Comment"
+msgstr ""
+
+#: inc/template-tags.php:76 inc/template-tags.php:105
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:76 inc/template-tags.php:105
+msgid "% Comments"
+msgstr ""
+
+#: inc/template-tags.php:93
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:99
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:105
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:109 inc/template-tags.php:250
+#: template-parts/content-page.php:25
+msgid "Edit"
+msgstr ""
+
+#: inc/template-tags.php:186
+msgid "&larr; Previous"
+msgstr ""
+
+#: inc/template-tags.php:187
+msgid "Next &rarr;"
+msgstr ""
+
+#: inc/template-tags.php:194
+msgid "Posts navigation"
+msgstr ""
+
+#: inc/template-tags.php:222
+msgid "Pingback:"
+msgstr ""
+
+#: inc/template-tags.php:222
+msgid "(Edit)"
+msgstr ""
+
+#: inc/template-tags.php:241
+msgid "Post author"
+msgstr ""
+
+#: inc/template-tags.php:247
+#. translators: 1: date, 2: time
+msgid "%1$s"
+msgstr ""
+
+#: inc/template-tags.php:249
+msgid "Reply"
+msgstr ""
+
+#: inc/template-tags.php:255
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/theme-info.php:8
+msgid "Patus WordPress Theme"
+msgstr ""
+
+#: inc/theme-info.php:8
+msgid "Theme Info"
+msgstr ""
+
+#: inc/theme-info.php:20
+msgid "Welcome to %1s - Version %2s"
+msgstr ""
+
+#: inc/theme-info.php:24
+msgid ""
+"%1s is proudly brought to you by %2s<span> Follow us on: </strong> %3s "
+"%4s</span>"
+msgstr ""
+
+#: inc/theme-info.php:27
+msgid "Facebook"
+msgstr ""
+
+#: inc/theme-info.php:28
+msgid "Twitter"
+msgstr ""
+
+#: inc/theme-info.php:35
+msgid "Getting started with %s"
+msgstr ""
+
+#: inc/theme-info.php:40
+msgid "Theme Documentation"
+msgstr ""
+
+#: inc/theme-info.php:41
+msgid ""
+"Need any help to setup and configure %s? Please have a look at our "
+"documentations instructions."
+msgstr ""
+
+#: inc/theme-info.php:43
+msgid "http://www.famethemes.com/themes/patus/"
+msgstr ""
+
+#: inc/theme-info.php:43
+msgid "Online Documentation"
+msgstr ""
+
+#: inc/theme-info.php:47
+msgid "Theme Options"
+msgstr ""
+
+#: inc/theme-info.php:48
+msgid ""
+"%s supports the Theme Customizer for all theme settings. Click "
+"\"Customize\" to start customize your site."
+msgstr ""
+
+#: inc/theme-info.php:50
+msgid "Customize"
+msgstr ""
+
+#: inc/theme-info.php:54
+msgid "Having Trouble and Need Support?"
+msgstr ""
+
+#: inc/theme-info.php:55
+msgid ""
+"Support for all our themes is conducted through the FameThemes support "
+"forums, if you would like to start a new thread over there our staff will "
+"take a look at your issue ;) "
+msgstr ""
+
+#: inc/theme-info.php:57
+msgid ""
+"http://www.famethemes.com/forums?utm_source=theme_info&utm_medium=text_link&"
+"utm_campaign=Theme_Info_Page"
+msgstr ""
+
+#: inc/theme-info.php:57
+msgid "FameThemes Support Forum"
+msgstr ""
+
+#: page-templates/template-archive.php:16
+msgid "Last 30 Posts"
+msgstr ""
+
+#: page-templates/template-archive.php:29
+msgid "n.j.y"
+msgstr ""
+
+#: page-templates/template-archive.php:32
+msgid "Monthly Archives"
+msgstr ""
+
+#: page-templates/template-archive.php:36
+msgid "Archives by Subject"
+msgstr ""
+
+#: search.php:16
+msgid "Search Results for: %s"
+msgstr ""
+
+#: template-parts/content-none.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:18 template-parts/content-single.php:42
+#: template-parts/content.php:36
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-single.php:25
+msgid "<span class=\"genericon genericon-category\"></span> "
+msgstr ""
+
+#: template-parts/content-single.php:29
+msgid "<span class=\"genericon genericon-tag\"></span> "
+msgstr ""
+
+#: template-parts/content.php:29
+#. translators: %s: Name of current post
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Patus"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://www.famethemes.com/themes/patus"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Patus is a Personal Blogging Theme for WordPress and an effortlessly tool "
+"for publishers of all kind, cherished for its flexibility, clean layouts "
+"and speed. It’s totally responsive so it adapts to your style as well as "
+"the device it’s viewed on."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "FameThemes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.famethemes.com"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Archives Template"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Fullwidth Template"
+msgstr ""
+
+#: archive.php:33
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: archive.php:36
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: comments.php:28
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:106
+msgctxt "Dosis font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/template-tags.php:27
+msgctxt "Previous post link"
+msgid "<span class=\"meta-nav\">&larr;</span>&nbsp;%title"
+msgstr ""
+
+#: inc/template-tags.php:28
+msgctxt "Next post link"
+msgid "%title&nbsp;<span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: inc/template-tags.php:54
+msgctxt "post date"
+msgid " on %s"
+msgstr ""
+
+#: inc/template-tags.php:63
+msgctxt "post author"
+msgid "Posted by %s"
+msgstr ""
