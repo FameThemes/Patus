@@ -57,7 +57,6 @@ function patus_setup() {
 		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption',
 	) );
 
-
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'patus_custom_background_args', array(
 		'default-color' => 'ffffff',
@@ -119,50 +118,50 @@ function patus_scripts() {
 	$primary   = get_theme_mod( 'ft_primary_color', '41b7d8' );
 	$secondary = get_theme_mod( 'ft_secondary_color', 'f55d2d' );
 	$custom_css = "
-                a {color: #{$primary}; 
+                a {color: #{$primary};
                     }
-                input[type=\"reset\"], 
-                input[type=\"submit\"], 
-                input[type=\"submit\"] { 
-                    background: #{$primary}; 
+                input[type=\"reset\"],
+                input[type=\"submit\"],
+                input[type=\"submit\"] {
+                    background: #{$primary};
                 }
                 #site-navigation.main-navigation.toggled .menu-toggle span,
-                #site-navigation .menu ul li a:hover, 
+                #site-navigation .menu ul li a:hover,
                 #site-navigation .menu ul li a:focus,
-                #site-navigation .menu ul ul li a:hover, 
-                #site-navigation .menu ul ul li a:focus, 
-                #site-navigation .nav-menu ul li a:hover, 
-                #site-navigation .nav-menu ul li a:focus, 
-                #site-navigation .nav-menu ul ul li a:hover, 
+                #site-navigation .menu ul ul li a:hover,
+                #site-navigation .menu ul ul li a:focus,
+                #site-navigation .nav-menu ul li a:hover,
+                #site-navigation .nav-menu ul li a:focus,
+                #site-navigation .nav-menu ul ul li a:hover,
                 #site-navigation .nav-menu ul ul li a:focus,
-                #site-navigation .menu li a:hover, 
+                #site-navigation .menu li a:hover,
                 #site-navigation .nav-menu li a:hover,
-                #site-navigation .menu li.current-menu-item a, 
-                #site-navigation .menu li.current_page_item a, 
-                #site-navigation .nav-menu li.current-menu-item a, 
+                #site-navigation .menu li.current-menu-item a,
+                #site-navigation .menu li.current_page_item a,
+                #site-navigation .nav-menu li.current-menu-item a,
                 #site-navigation .nav-menu li.current_page_item a,
                 .more-link,.more-link:hover,
-                .loop-pagination a:hover, 
+                .loop-pagination a:hover,
                 .loop-pagination span:hover,
-                .loop-pagination a.current, 
+                .loop-pagination a.current,
                 .loop-pagination span.current,
-                .entry-footer .post-categories li a:hover, 
+                .entry-footer .post-categories li a:hover,
                 .entry-footer .post-tags li a:hover,
                 .post-navigation a:hover,
-                .post-categories li a:hover, 
+                .post-categories li a:hover,
                 .post-tags li a:hover,
                 #comments .comment .comment-wrapper .comment-meta .comment-time:hover,
-                #comments .comment .comment-wrapper .comment-meta .comment-reply-link:hover, 
+                #comments .comment .comment-wrapper .comment-meta .comment-reply-link:hover,
                 #comments .comment .comment-wrapper .comment-meta .comment-edit-link:hover,
                 .widget a:hover,
-                .widget #calendar_wrap a { 
-                    color: #{$secondary}; 
+                .widget #calendar_wrap a {
+                    color: #{$secondary};
                 }
-                input[type=\"reset\"]:hover, 
-                input[type=\"submit\"]:hover, 
+                input[type=\"reset\"]:hover,
                 input[type=\"submit\"]:hover,
-                .entry-meta { 
-                	background: #{$secondary}; 
+                input[type=\"submit\"]:hover,
+                .entry-meta {
+                	background: #{$secondary};
                 }";
     wp_add_inline_style( 'patus-style', $custom_css );
 
