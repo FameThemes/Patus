@@ -26,7 +26,7 @@ get_header(); ?>
 						<?php if ( $the_query->have_posts() ) : ?>
 						<ul>
 							<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-							<li><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><span class="comments_number"><?php comments_number( '0', '1', '%', '' ); ?></span><span class="archdate"><?php the_time(__ ( 'n.j.y', 'uxde' )); ?></span><?php the_title(); ?></a></li>
+							<li><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><span class="comments_number"><?php comments_number( '0', '1', '%', '' ); ?></span><span class="archdate"><?php the_time(__ ( 'n.j.y', 'patus' )); ?></span><?php the_title(); ?></a></li>
 							<?php endwhile; endif; wp_reset_postdata(); ?>
 						</ul>
 					<h2><?php _e( 'Monthly Archives', 'patus' ); ?></h2>

@@ -6,6 +6,7 @@ CHANGELOG
 ## 1.0.4
 * Update theme online document link.
 * Improve theme info page.
+* Update patus.pot language file.
 
 
 ## 1.0.3
