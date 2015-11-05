@@ -29,9 +29,9 @@ function patus_theme_info_page() {
 				<div class="theme_info_left">
 					<div class="theme_link">
 						<h3>Theme Customizer</h3>
-						<p class="about"><?php printf(esc_html__('Need any help to setup and configure %s? Please have a look at our documentations instructions.', 'patus'), $theme_data->Name); ?></p>
+						<p class="about"><?php printf(esc_html__('%s supports the Theme Customizer for all theme settings. Click "Customize" to start customize your site.', 'patus'), $theme_data->Name); ?></p>
 						<p>
-							<a href="<?php echo admin_url('customize.php'); ?>" class="button button-primary"><?php esc_html_e('Start Customize Your Site', 'patus'); ?></a>
+							<a href="<?php echo admin_url('customize.php'); ?>" class="button button-primary"><?php esc_html_e('Start Customize', 'patus'); ?></a>
 						</p>
 					</div>
 					<div class="theme_link">
