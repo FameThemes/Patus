@@ -207,4 +207,4 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * Add theme info page
  */
-require get_template_directory() . '/inc/theme-info.php';
+require get_template_directory() . '/inc/dashboard.php';
