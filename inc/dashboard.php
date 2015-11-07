@@ -31,14 +31,14 @@ function patus_theme_info_page() {
 						<h3>Theme Customizer</h3>
 						<p class="about"><?php printf(esc_html__('%s supports the Theme Customizer for all theme settings. Click "Customize" to start customize your site.', 'patus'), $theme_data->Name); ?></p>
 						<p>
-							<a href="<?php echo admin_url('customize.php'); ?>" class="button button-primary"><?php esc_html_e('Start Customize', 'patus'); ?></a>
+							<a href="<?php echo admin_url('customize.php'); ?>" class="button button-primary"><?php esc_htmlesc_html_e('Start Customize', 'patus'); ?></a>
 						</p>
 					</div>
 					<div class="theme_link">
 						<h3>Theme Documentation</h3>
 						<p class="about"><?php printf(esc_html__('Need any help to setup and configure %s? Please have a look at our documentations instructions.', 'patus'), $theme_data->Name); ?></p>
 						<p>
-							<a href="<?php echo esc_url( esc_html__( 'http://docs.famethemes.com/category/9-patus', 'patus' ) ); ?>" target="_blank" class="button button-secondary"><?php esc_html_e('Online Documentation', 'patus'); ?></a>
+							<a href="<?php echo esc_url( esc_html__( 'http://docs.famethemes.com/category/9-patus', 'patus' ) ); ?>" target="_blank" class="button button-secondary"><?php esc_htmlesc_html_e('Online Documentation', 'patus'); ?></a>
 						</p>
 					</div>
 					<div class="theme_link">

@@ -3,6 +3,11 @@ CHANGELOG
 ====================================================================
 
 
+## 1.0.5
+* Change from theme info page to theme dashboard.
+* Escape translated strings @https://thethemefoundry.com/blog/five-things-we-learned-from-getting-our-theme-reviewed/
+
+
 ## 1.0.4
 * Update theme online document link.
 * Improve theme info page.
