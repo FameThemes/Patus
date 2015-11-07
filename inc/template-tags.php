@@ -228,11 +228,8 @@ function patus_comment( $comment, $args, $depth ) {
     ?>
     <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
         <article id="comment-<?php comment_ID(); ?>" class="comment clearfix">
-
             <?php echo get_avatar( $comment, 60 ); ?>
-
             <div class="comment-wrapper">
-            
                 <header class="comment-meta comment-author vcard">
                     <?php
                         printf( '<cite><b class="fn">%1$s</b> %2$s</cite>',
@@ -259,9 +256,7 @@ function patus_comment( $comment, $args, $depth ) {
                     <?php comment_text(); ?>
                     <?php  ?>
                 </div><!-- .comment-content -->
-
             </div><!--/comment-wrapper-->
-
         </article><!-- #comment-## -->
     <?php
         break;

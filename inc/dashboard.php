@@ -56,9 +56,7 @@ function patus_theme_info_page() {
 
 				</div>
 			</div>
-
 		</div>
-
 	</div> <!-- END .theme_info -->
 
 <?php
