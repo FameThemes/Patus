@@ -1,6 +1,5 @@
-	
-	
-	Thank you for downloading Patus Theme!
+
+Thank you for downloading Patus Theme!
 
 
 ====================================================================
@@ -11,8 +10,8 @@ Patus is a Personal Blogging Theme for WordPress and an effortlessly tool for pu
 ====================================================================
 SUPPORT
 ====================================================================
-In case you need help, feel free to register an account on our support forum and let us know your issues.
-- Support Forums: http://www.famethemes.com/forums/
+Support for Patus WordPress theme is conducted through the WordPress free theme support forum.
+- Support Forums: https://wordpress.org/support/theme/patus
 
 ====================================================================
 DOCUMENTATION
