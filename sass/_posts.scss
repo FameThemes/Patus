@@ -4,7 +4,7 @@
 	@include rem('margin', 4px 5px 0px 0px);
 }
 
-/* Post Format
+/* Post Format Stylesheed
 ------------------------------*/
 .format-image, .format-video {
 	.entry-content {
@@ -120,6 +120,7 @@
 			@include rem( 'margin-top', 4px );
 		}
 	}
+
 	.entry-author-byline {
 		color: $meta;
 		text-transform: uppercase;
@@ -127,6 +128,7 @@
 		@include rem( 'font-size', 13px );
 		@include rem ( 'margin-bottom', $base/2 );
 	}
+
 	.entry-author-bio {
 		@include rem ( 'padding-left', 85px );
 	}
@@ -553,7 +555,7 @@ img.wp-smiley {
 		border-top: 1px solid #dedede;
 	    display: block;
 	    margin: 0;
-	    
+
 	    span.archdate {
 	    	color: #8b9091;
 	    	float: left;
@@ -583,14 +585,3 @@ img.wp-smiley {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-

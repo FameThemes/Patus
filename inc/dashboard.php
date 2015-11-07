@@ -1,13 +1,11 @@
 <?php
 /**
- * Add theme info page
+ * Add theme dashboard page
  */
 
 function patus_theme_info() {
-
 	$theme_data = wp_get_theme();
 	add_theme_page( sprintf( esc_html__( '%s Theme Dashboard', 'patus' ), $theme_data->Name ), sprintf( esc_html__('%s Dashboard', 'patus'), $theme_data->Name), 'edit_theme_options', strtolower( $theme_data->Name ), 'patus_theme_info_page');
-
 }
 add_action('admin_menu', 'patus_theme_info');
 
