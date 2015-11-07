@@ -15,14 +15,12 @@ function patus_theme_info_page() {
 	$theme_data = wp_get_theme(); ?>
 
 	<div class="wrap about-wrap theme_info_wrapper">
-
 		<h1><?php printf(esc_html__('Welcome to %1s - Version %2s', 'patus'), $theme_data->Name, $theme_data->Version ); ?></h1>
 		<div class="about-text">Patus is a personal blogging theme for WordPress and an effortlessly tool for publishers of all kind, cherished for its flexibility, clean layouts and speed.</div>
 		<a target="_blank" href="<?php echo esc_url('http://www.famethemes.com/?utm_source=theme_info&utm_medium=badge_link&utm_campaign=Theme_Info_Page'); ?>" class="famethemes-badge wp-badge"><span>FameThemes</span></a>
 		<h2 class="nav-tab-wrapper"><a href="?page=patus" class="nav-tab nav-tab-active"><?php echo $theme_data->Name; ?></a></h2>
 
 		<div class="theme_info">
-
 			<div class="theme_info_column clearfix">
 				<div class="theme_info_left">
 					<div class="theme_link">
@@ -55,6 +53,7 @@ function patus_theme_info_page() {
 				</div>
 			</div>
 		</div>
+
 	</div> <!-- END .theme_info -->
 
 <?php
