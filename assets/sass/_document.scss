@@ -1,3 +1,4 @@
+// main: style.scss
 /*------------------------------
 	2.1 Typography
 ------------------------------*/
@@ -20,11 +21,11 @@ textarea {
 	font: inherit;
 }
 
-::-moz-selection { 
+::-moz-selection {
 	background: #000000;
 	color: $white;
 }
-	
+
 ::selection {
 	background: #000000;
 	color: $white;
@@ -253,7 +254,7 @@ h6 {
 h1 {
 	line-height: 1.2;
 	@include rem('font-size', 30px);
-	
+
 	@include for(medium-screens) {
 		@include rem('font-size', 35px);
 	}
@@ -437,11 +438,11 @@ table {
     border-spacing: 0;
 }
 
-table > thead > tr > th, 
-table > tbody > tr > th, 
-table > tfoot > tr > th, 
-table > thead > tr > td, 
-table > tbody > tr > td, 
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > tbody > tr > td,
 table > tfoot > tr > td {
     border: 1px solid $border;
     line-height: 1.42857;
@@ -557,9 +558,3 @@ input, textarea,input[type="submit"]:focus{
 	width: auto;
 	z-index: 100000; /* Above WP toolbar */
 }
-
-
-
-
-
-

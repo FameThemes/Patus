@@ -1,3 +1,4 @@
+// main: style.scss
 /*------------------------------
 	4.1 Header
 ------------------------------*/
@@ -44,7 +45,7 @@
     @include rem( 'font-size', 14px );
     @include rem( 'margin', 0px );
     margin-top: 1px;
-    cursor: pointer;    
+    cursor: pointer;
     width: 100%;
     border: none;
     text-align: left;
@@ -313,7 +314,7 @@
 
 .page-header {
 	@include rem( 'margin-bottom', $base*2 );
-	.page-title { 
+	.page-title {
 		margin-top: 0px;
 		@include rem( 'font-size', 24px );
 		font-weight: normal;
@@ -375,6 +376,3 @@
 		float: right;
 	}
 }
-
-
-

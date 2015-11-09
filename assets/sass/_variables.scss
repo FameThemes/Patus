@@ -69,5 +69,5 @@ $baseline-px: 10px;
 				$rem-values: append($rem-values, $value); }
 			@else {
 				$rem-values: append($rem-values, $value / $baseline-rem); } }
-		#{$property}: $rem-values; } 
+		#{$property}: $rem-values; }
 }
