@@ -21,7 +21,7 @@ function patus_post_nav() {
 	}
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'patus' ); ?></h1>
+		<h1 class="screen-reader-text"><?php esc_html_e( 'Post navigation', 'patus' ); ?></h1>
 		<div class="nav-links">
 			<?php
 				previous_post_link( '<div class="nav-previous">%link</div>', _x( '<span class="meta-nav">&larr;</span>&nbsp;%title', 'Previous post link', 'patus' ) );
@@ -66,14 +66,14 @@ function patus_posted_on() {
 
 	echo '<span class="byline"> ' . $byline . '</span><span class="posted-on">' . $posted_on . '</span>';
 
-	$categories_list = get_the_category_list( __( ', ', 'patus' ) );
+	$categories_list = get_the_category_list( esc_html__( ', ', 'patus' ) );
 	if ( $categories_list && patus_categorized_blog() ) {
-		printf( '<span class="cat-links">' . __( ' in %1$s', 'patus' ) . '</span>', $categories_list );
+		printf( '<span class="cat-links">' . esc_html__( ' in %1$s', 'patus' ) . '</span>', $categories_list );
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link"> / ';
-		comments_popup_link( __( '0 Comment', 'patus' ), __( '1 Comment', 'patus' ), __( '% Comments', 'patus' ) );
+		comments_popup_link( esc_html__( '0 Comment', 'patus' ), esc_html__( '1 Comment', 'patus' ), esc_html__( '% Comments', 'patus' ) );
 		echo '</span>';
 	}
 
@@ -88,25 +88,25 @@ function patus_entry_footer() {
 	// Hide category and tag text for pages.
 	if ( 'post' == get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( __( ', ', 'patus' ) );
+		$categories_list = get_the_category_list( esc_html__( ', ', 'patus' ) );
 		if ( $categories_list && patus_categorized_blog() ) {
-			printf( '<span class="cat-links">' . __( 'Posted in %1$s', 'patus' ) . '</span>', $categories_list );
+			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'patus' ) . '</span>', $categories_list );
 		}
 
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', __( ', ', 'patus' ) );
+		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'patus' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . __( 'Tagged %1$s', 'patus' ) . '</span>', $tags_list );
+			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'patus' ) . '</span>', $tags_list );
 		}
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link">';
-		comments_popup_link( __( 'Leave a comment', 'patus' ), __( '1 Comment', 'patus' ), __( '% Comments', 'patus' ) );
+		comments_popup_link( esc_html__( 'Leave a comment', 'patus' ), esc_html__( '1 Comment', 'patus' ), esc_html__( '% Comments', 'patus' ) );
 		echo '</span>';
 	}
 
-	edit_post_link( __( 'Edit', 'patus' ), '<span class="edit-link">', '</span>' );
+	edit_post_link( esc_html__( 'Edit', 'patus' ), '<span class="edit-link">', '</span>' );
 }
 endif;
 
@@ -183,15 +183,15 @@ function patus_paging_nav() {
 		'current'   => $paged,
 		'mid_size'  => 1,
 		'add_args'  => array_map( 'urlencode', $query_args ),
-		'prev_text' => __( '&larr; Previous', 'patus' ),
-		'next_text' => __( 'Next &rarr;', 'patus' ),
+		'prev_text' => esc_html__( '&larr; Previous', 'patus' ),
+		'next_text' => esc_html__( 'Next &rarr;', 'patus' ),
 	) );
 
 	if ( $links ) :
 
 	?>
 	<nav class="navigation paging-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'patus' ); ?></h1>
+		<h1 class="screen-reader-text"><?php esc_html_e( 'Posts navigation', 'patus' ); ?></h1>
 		<div class="pagination loop-pagination">
 			<?php echo $links; ?>
 		</div><!--/ .pagination -->
@@ -219,7 +219,7 @@ function patus_comment( $comment, $args, $depth ) {
         // Display trackbacks differently than normal comments.
     ?>
     <li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
-        <p><?php _e( 'Pingback:', 'patus' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( '(Edit)', 'patus' ), '<span class="edit-link">', '</span>' ); ?></p>
+        <p><?php esc_html_e( 'Pingback:', 'patus' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( esc_html__( '(Edit)', 'patus' ), '<span class="edit-link">', '</span>' ); ?></p>
     <?php
             break;
         default :
@@ -228,40 +228,35 @@ function patus_comment( $comment, $args, $depth ) {
     ?>
     <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
         <article id="comment-<?php comment_ID(); ?>" class="comment clearfix">
-
             <?php echo get_avatar( $comment, 60 ); ?>
-
             <div class="comment-wrapper">
-            
                 <header class="comment-meta comment-author vcard">
                     <?php
                         printf( '<cite><b class="fn">%1$s</b> %2$s</cite>',
                             get_comment_author_link(),
                             // If current post author is also comment author, make it known visually.
-                            ( $comment->user_id === $post->post_author ) ? '<span>' . __( 'Post author', 'patus' ) . '</span>' : ''
+                            ( $comment->user_id === $post->post_author ) ? '<span>' . esc_html__( 'Post author', 'patus' ) . '</span>' : ''
                         );
                         printf( '<a class="comment-time" href="%1$s"><time datetime="%2$s">%3$s</time></a>',
                             esc_url( get_comment_link( $comment->comment_ID ) ),
                             get_comment_time( 'c' ),
                             /* translators: 1: date, 2: time */
-                            sprintf( __( '%1$s', 'patus' ), get_comment_date() )
+                            sprintf( esc_html__( '%1$s', 'patus' ), get_comment_date() )
                         );
-                        comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'patus' ), 'after' => '', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) );
-                        edit_comment_link( __( 'Edit', 'patus' ), '<span class="edit-link">', '</span>' );
+                        comment_reply_link( array_merge( $args, array( 'reply_text' => esc_html__( 'Reply', 'patus' ), 'after' => '', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) );
+                        edit_comment_link( esc_html__( 'Edit', 'patus' ), '<span class="edit-link">', '</span>' );
                     ?>
                 </header><!-- .comment-meta -->
 
                 <?php if ( '0' == $comment->comment_approved ) : ?>
-                    <p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'patus' ); ?></p>
+                    <p class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'patus' ); ?></p>
                 <?php endif; ?>
 
                 <div class="comment-content entry-content">
                     <?php comment_text(); ?>
                     <?php  ?>
                 </div><!-- .comment-content -->
-
             </div><!--/comment-wrapper-->
-
         </article><!-- #comment-## -->
     <?php
         break;

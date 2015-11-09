@@ -13,8 +13,8 @@
 	<footer id="colophon" class="site-footer clearfix" role="contentinfo">
 		<div class="container">
 			<div class="site-info">
-				<?php esc_attr_e( '&copy;', 'patus' ); ?> <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?>
-				<?php printf( __( ' - Theme: %1$s by %2$s.', 'patus' ), 'Patus', '<a href="'. esc_url( __( 'http://www.famethemes.com/', 'patus' ) ) .'" rel="designer">FameThemes</a>' ); ?>
+				<?php esc_html_e( '&copy;', 'patus' ); ?> <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?>
+				<?php printf( esc_html__( ' - Theme: %1$s by %2$s.', 'patus' ), 'Patus', '<a href="'. esc_url( esc_html__( 'http://www.famethemes.com/', 'patus' ) ) .'" rel="designer">FameThemes</a>' ); ?>
 			</div><!-- .site-info -->
 			<div class="footer-social">
 				<?php echo wp_kses_post(get_theme_mod('ft_general_right_footer')); ?>

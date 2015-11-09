@@ -13,7 +13,7 @@ get_header(); ?>
 				</header><!-- .entry-header -->
 
 				<div class="archive-lists">
-					<h2><?php _e( 'Last 30 Posts', 'patus' ); ?></h2>
+					<h2><?php esc_html_e( 'Last 30 Posts', 'patus' ); ?></h2>
 						<?php 
 						$args = array(
 							'post_type'      => 'post',
@@ -29,11 +29,11 @@ get_header(); ?>
 							<li><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><span class="comments_number"><?php comments_number( '0', '1', '%', '' ); ?></span><span class="archdate"><?php the_time(__ ( 'n.j.y', 'patus' )); ?></span><?php the_title(); ?></a></li>
 							<?php endwhile; endif; wp_reset_postdata(); ?>
 						</ul>
-					<h2><?php _e( 'Monthly Archives', 'patus' ); ?></h2>
+					<h2><?php esc_html_e( 'Monthly Archives', 'patus' ); ?></h2>
 						<ul class="archive-month">
 							<?php wp_get_archives( 'type=monthly&show_post_count=0' ); ?>
 						</ul>		
-					<h2><?php _e( 'Archives by Subject', 'patus' ); ?></h2>
+					<h2><?php esc_html_e( 'Archives by Subject', 'patus' ); ?></h2>
 						<ul class="archive-cat">
 							<?php wp_list_categories( 'title_li=' ); ?>
 						</ul>

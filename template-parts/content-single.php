@@ -22,11 +22,11 @@
 			$meta_text     = '';
 
 			if ( $category_list ) {
-				$meta_text .= __( '<span class="genericon genericon-category"></span> ', 'patus' ) . '%1$s';
+				$meta_text .= esc_html__( '<span class="genericon genericon-category"></span> ', 'patus' ) . '%1$s';
 			}
 
 			if ( $tag_list ) {
-				$meta_text .= __( '<span class="genericon genericon-tag"></span> ', 'patus' ) . '%2$s';
+				$meta_text .= esc_html__( '<span class="genericon genericon-tag"></span> ', 'patus' ) . '%2$s';
 			}
 
 			printf(
@@ -39,7 +39,7 @@
 		</div>
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'patus' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'patus' ),
 				'after'  => '</div>',
 			) );
 		?>

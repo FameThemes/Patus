@@ -1,7 +1,7 @@
 <?php
 /**
  * Custom functions that act independently of the theme templates
- *
+
  * Eventually, some of the functionality here could be replaced by core features
  *
  * @package Patus
@@ -69,7 +69,7 @@ function patus_wp_title( $title, $sep ) {
 
 	// Add a page number if necessary:
 	if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
-		$title .= " $sep " . sprintf( __( 'Page %s', 'patus' ), max( $paged, $page ) );
+		$title .= " $sep " . sprintf( esc_html__( 'Page %s', 'patus' ), max( $paged, $page ) );
 	}
 
 	return $title;
@@ -96,4 +96,3 @@ function patus_setup_author() {
 	}
 }
 add_action( 'wp', 'patus_setup_author' );
-

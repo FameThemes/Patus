@@ -18,7 +18,7 @@ function patus_customize_register( $wp_customize ) {
 
 	/* General Settings
 	--------------------------------------------------------------------------*/
-	$wp_customize->add_section( 'ft_general', array( 'title' => __( 'General Settings', 'patus' ), 'priority' => 1) );
+	$wp_customize->add_section( 'ft_general', array( 'title' => esc_html__( 'General Settings', 'patus' ), 'priority' => 1) );
 
 	/* Sidebar Position */
 	$wp_customize->add_setting( 'ft_general_sidebar', array(
@@ -29,7 +29,7 @@ function patus_customize_register( $wp_customize ) {
     $wp_customize->add_control( 'ft_general_sidebar', array(
         'settings' => 'ft_general_sidebar',
         'section'  => 'ft_general',
-        'label'    => __( 'Sidebar Position:', 'patus' ),
+        'label'    => esc_html__( 'Sidebar Position:', 'patus' ),
         'type'     => 'select',
         'choices'  => array(
                 'left' => 'Left Sidebar',
@@ -47,14 +47,14 @@ function patus_customize_register( $wp_customize ) {
     $wp_customize->add_control( 'ft_general_right_footer', array(
         'settings' => 'ft_general_right_footer',
         'section'  => 'ft_general',
-        'label'    => __( 'Right Footer Text:', 'patus' ),
+        'label'    => esc_html__( 'Right Footer Text:', 'patus' ),
         'type'     => 'textarea',
         'priority' => '2'
     ) );
 
 	/* Social Settings
 	--------------------------------------------------------------------------*/
-	$wp_customize->add_section( 'ft_social', array( 'title' => __( 'Social Settings', 'patus' ), 'priority' => 2) );
+	$wp_customize->add_section( 'ft_social', array( 'title' => esc_html__( 'Social Settings', 'patus' ), 'priority' => 2) );
 
 	/* RSS */
     $wp_customize->add_setting( 'ft_social_rss', array(
@@ -65,7 +65,7 @@ function patus_customize_register( $wp_customize ) {
     $wp_customize->add_control( 'ft_social_rss', array(
         'settings' => 'ft_social_rss',
         'section'  => 'ft_social',
-        'label'    => __( 'RSS Feed:', 'patus' ),
+        'label'    => esc_html__( 'RSS Feed:', 'patus' ),
         'priority' => '1'
     ) );
 
@@ -78,7 +78,7 @@ function patus_customize_register( $wp_customize ) {
     $wp_customize->add_control( 'ft_social_email', array(
         'settings' => 'ft_social_email',
         'section'  => 'ft_social',
-        'label'    => __( 'Email Address:', 'patus' ),
+        'label'    => esc_html__( 'Email Address:', 'patus' ),
         'priority' => '2'
     ) );
 
@@ -91,7 +91,7 @@ function patus_customize_register( $wp_customize ) {
     $wp_customize->add_control( 'ft_social_twitter', array(
         'settings' => 'ft_social_twitter',
         'section'  => 'ft_social',
-        'label'    => __( 'Twitter Link:', 'patus' ),
+        'label'    => esc_html__( 'Twitter Link:', 'patus' ),
         'priority' => '3'
     ) );
 
@@ -104,7 +104,7 @@ function patus_customize_register( $wp_customize ) {
     $wp_customize->add_control( 'ft_social_facebook', array(
         'settings' => 'ft_social_facebook',
         'section'  => 'ft_social',
-        'label'    => __( 'Facebook Link:', 'patus' ),
+        'label'    => esc_html__( 'Facebook Link:', 'patus' ),
         'priority' => '4'
     ) );
 
@@ -117,7 +117,7 @@ function patus_customize_register( $wp_customize ) {
     $wp_customize->add_control( 'ft_social_google', array(
         'settings' => 'ft_social_google',
         'section'  => 'ft_social',
-        'label'    => __( 'Google Plus Link:', 'patus' ),
+        'label'    => esc_html__( 'Google Plus Link:', 'patus' ),
         'priority' => '4'
     ) );
 
@@ -132,7 +132,7 @@ function patus_customize_register( $wp_customize ) {
         'sanitize_js_callback' => 'maybe_hash_hex_color'
     ) );
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'ft_primary_color', array(
-        'label'    => __( 'Primary Color', 'patus' ),
+        'label'    => esc_html__( 'Primary Color', 'patus' ),
         'section'  => 'colors',
         'settings' => 'ft_primary_color',
         'priority' => 10,
@@ -146,7 +146,7 @@ function patus_customize_register( $wp_customize ) {
         'sanitize_js_callback' => 'maybe_hash_hex_color'
     ) );
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'ft_secondary_color', array(
-        'label'    => __( 'Secondary Color', 'patus' ),
+        'label'    => esc_html__( 'Secondary Color', 'patus' ),
         'section'  => 'colors',
         'settings' => 'ft_secondary_color',
         'priority' => 10,
@@ -175,8 +175,8 @@ function ft_sanitize_text($input) {
  */
 function ft_sanitize_select($input) {
     $valid = array(
-        'left' => __('Left Sidebar', 'patus'),
-        'right' => __('Right Sidebar', 'patus'),
+        'left' => esc_html__('Left Sidebar', 'patus'),
+        'right' => esc_html__('Right Sidebar', 'patus'),
     );
     if (array_key_exists($input, $valid)) {
         return $input;

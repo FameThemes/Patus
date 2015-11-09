@@ -43,7 +43,7 @@ function patus_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'patus' ),
+		'primary' => esc_html__( 'Primary Menu', 'patus' ),
 	) );
 
 	// This theme styles the visual editor to resemble the theme style.
@@ -73,7 +73,7 @@ add_action( 'after_setup_theme', 'patus_setup' );
  */
 function patus_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'patus' ),
+		'name'          => esc_html__( 'Sidebar', 'patus' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -207,4 +207,4 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * Add theme info page
  */
-require get_template_directory() . '/inc/theme-info.php';
+require get_template_directory() . '/inc/dashboard.php';
