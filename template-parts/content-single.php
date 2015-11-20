@@ -22,11 +22,11 @@
 			$meta_text     = '';
 
 			if ( $category_list ) {
-				$meta_text .= esc_html__( '<span class="genericon genericon-category"></span> ', 'patus' ) . '%1$s';
+				$meta_text .= '<span class="genericon genericon-category"></span>' . '%1$s';
 			}
 
 			if ( $tag_list ) {
-				$meta_text .= esc_html__( '<span class="genericon genericon-tag"></span> ', 'patus' ) . '%2$s';
+				$meta_text .= '<span class="genericon genericon-tag"></span> ' . '%2$s';
 			}
 
 			printf(
@@ -47,6 +47,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		
+
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
