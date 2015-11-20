@@ -2,10 +2,13 @@
 CHANGELOG
 ====================================================================
 
+## 1.0.6
+* Fixed escape translate string issue in theme dashboard.
+* Fixed escape translate string in single post.
 
 ## 1.0.5
 * Change from theme info page to theme dashboard.
-* Escape translated strings @https://thethemefoundry.com/blog/five-things-we-learned-from-getting-our-theme-reviewed/
+* Escape translated strings
 
 
 ## 1.0.4
