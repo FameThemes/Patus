@@ -2,6 +2,9 @@
 CHANGELOG
 ====================================================================
 
+## 1.0.8
+* Add theme support title tag
+
 ## 1.0.7
 * Fixed multiple H1 tag
 * Add custom logo
