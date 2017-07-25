@@ -5,7 +5,7 @@ Theme URI: http://www.famethemes.com/themes/patus
 Author: FameThemes
 Author URI: http://www.famethemes.com
 Description: Patus is a Personal Blogging Theme for WordPress and an effortlessly tool for publishers of all kind, cherished for its flexibility, clean layouts and speed. It’s totally responsive so it adapts to your style as well as the device it’s viewed on.
-Version: 1.0.6
+Version: 1.0.7
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: patus
@@ -1460,6 +1460,8 @@ input, textarea, input[type="submit"]:focus {
 
 .site-branding .site-title a {
 	font-family: "Dosis", Helvetica, Arial, sans-serif;
+	color: #000;
+	text-decoration: none;
 }
 
 .site-description {
@@ -1956,6 +1958,7 @@ input, textarea, input[type="submit"]:focus {
 .entry-header .entry-title {
 	margin-top: 0px;
 	margin-bottom: 20px;
+	line-height: 1.2;
 	font-size: 44px;
 	font-size: 4.4rem;
 }

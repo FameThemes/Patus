@@ -5,7 +5,6 @@
  *
  * @package Patus
  */
-
 /**
  * Set up the WordPress core custom header feature.
  *
@@ -26,7 +25,6 @@ function patus_custom_header_setup() {
 	) ) );
 }
 add_action( 'after_setup_theme', 'patus_custom_header_setup' );
-
 if ( ! function_exists( 'patus_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog
@@ -34,14 +32,12 @@ if ( ! function_exists( 'patus_header_style' ) ) :
  * @see patus_custom_header_setup().
  */
 function patus_header_style() {
-	$header_text_color = get_header_textcolor();
-
+	$header_text_color = get_header_textcolor(); 
 	// If no custom options for text are set, let's bail
 	// get_header_textcolor() options: HEADER_TEXTCOLOR is default, hide text (returns 'blank') or any hex value
-	if ( HEADER_TEXTCOLOR == $header_text_color ) {
+	if ( get_theme_support( 'custom-header', 'default-text-color' ) == $header_text_color ) {
 		return;
 	}
-
 	// If we get this far, we have custom styles. Let's do this.
 	?>
 	<style type="text/css">
@@ -67,7 +63,6 @@ function patus_header_style() {
 	<?php
 }
 endif; // patus_header_style
-
 if ( ! function_exists( 'patus_admin_header_style' ) ) :
 /**
  * Styles the header image displayed on the Appearance > Header admin panel.
@@ -99,6 +94,7 @@ function patus_admin_header_style() {
 <?php
 }
 endif; // patus_admin_header_style
+
 
 if ( ! function_exists( 'patus_admin_header_image' ) ) :
 /**

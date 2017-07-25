@@ -2,6 +2,10 @@
 CHANGELOG
 ====================================================================
 
+## 1.0.7
+* Fixed multiple H1 tag
+* Add custom logo
+
 ## 1.0.6
 * Fixed escape translate string issue in theme dashboard.
 * Fixed escape translate string in single post.

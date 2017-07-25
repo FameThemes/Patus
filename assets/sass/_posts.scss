@@ -38,6 +38,7 @@
 	.entry-title {
 		margin-top: 0px;
 		margin-bottom: 20px;
+		line-height: 1.2;
 		@include rem('font-size', 44px);
 	}
 }

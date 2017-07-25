@@ -62,6 +62,18 @@ function patus_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+	/**
+	 * Add support for core custom logo.
+	 *
+	 * @link https://codex.wordpress.org/Theme_Logo
+	 */
+	add_theme_support( 'custom-logo', array(
+		'height'      => 65,
+		'width'       => 180,
+		'flex-width'  => true,
+		'flex-height' => true,
+	) );
 }
 endif; // patus_setup
 add_action( 'after_setup_theme', 'patus_setup' );
@@ -78,8 +90,8 @@ function patus_widgets_init() {
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
 }
 add_action( 'widgets_init', 'patus_widgets_init' );
