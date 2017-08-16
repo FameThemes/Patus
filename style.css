@@ -1532,7 +1532,7 @@ input, textarea, input[type="submit"]:focus {
 }
 
 #site-navigation {
-	background: url("assets/images/line_colored.png") repeat-x top left;
+	background: #fff url("assets/images/line_colored.png") repeat-x top left;
 	padding-top: 5px;
 	border-bottom: 1px solid #e2e2e2;
 }

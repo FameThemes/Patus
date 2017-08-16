@@ -177,6 +177,11 @@ function patus_scripts() {
                 .entry-meta {
                 	background: #{$secondary};
                 }";
+
+		if ( get_header_image() ) :
+			$custom_css .= '.site-header {  background-image: url('. esc_url( get_header_image() ) .'); background-repeat: no-repeat; background-size: cover; }';
+		endif;
+
     wp_add_inline_style( 'patus-style', $custom_css );
 
 	// Enqueue jQuery
