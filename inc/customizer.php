@@ -73,7 +73,7 @@ function patus_customize_register( $wp_customize ) {
     $wp_customize->add_setting( 'ft_social_email', array(
         'default'   => 'example@email.com',
         'transport' => 'refresh',
-        'sanitize_callback' => 'esc_url_raw'
+        'sanitize_callback' => 'sanitize_text_field'
     ) );
     $wp_customize->add_control( 'ft_social_email', array(
         'settings' => 'ft_social_email',

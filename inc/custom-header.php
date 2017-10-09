@@ -54,7 +54,7 @@ function patus_header_style() {
 		// If the user has set a custom color for the text use that
 		else :
 	?>
-		.site-title a,
+        .site-branding .site-title a,
 		.site-description {
 			color: #<?php echo $header_text_color; ?>;
 		}
