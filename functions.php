@@ -76,6 +76,15 @@ function patus_setup() {
 		'flex-width'  => true,
 		'flex-height' => true,
 	) );
+
+	// Add support for Block Styles.
+	add_theme_support( 'wp-block-styles' );
+	
+	// Add support for full and wide align images.
+	add_theme_support( 'align-wide' );
+
+	// Add support for responsive embedded content.
+	add_theme_support( 'responsive-embeds' );
 }
 endif; // patus_setup
 add_action( 'after_setup_theme', 'patus_setup' );

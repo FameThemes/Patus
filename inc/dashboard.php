@@ -46,7 +46,7 @@ function patus_theme_info_page() {
 						<h3>Theme Documentation</h3>
 						<p class="about"><?php printf(esc_html__('Need any help to setup and configure %s? Please have a look at our documentations instructions.', 'patus'), $theme_data->Name); ?></p>
 						<p>
-							<a href="<?php echo esc_url( esc_html__( 'http://docs.famethemes.com/category/115-patus', 'patus' ) ); ?>" target="_blank" class="button button-secondary"><?php esc_html_e('Online Documentation', 'patus'); ?></a>
+							<a href="<?php echo esc_url( esc_html__( 'https://docs.famethemes.com/category/115-patus', 'patus' ) ); ?>" target="_blank" class="button button-secondary"><?php esc_html_e('Online Documentation', 'patus'); ?></a>
 						</p>
 					</div>
 					<div class="theme_link">
@@ -60,7 +60,7 @@ function patus_theme_info_page() {
 
 				<div class="theme_info_right">
 
-					<img src="<?php echo get_template_directory_uri(); ?>/screenshot.png" alt="Theme Screenshot" />
+					<img src="<?php echo esc_url(get_template_directory_uri()); ?>/screenshot.png" alt="Theme Screenshot" />
 
 				</div>
 			</div>

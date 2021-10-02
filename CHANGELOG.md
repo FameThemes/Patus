@@ -1,6 +1,10 @@
 ====================================================================
 CHANGELOG
 ====================================================================
+## 1.1.0
+* Fixed WordPress Theme Check.
+* WordPress 5.8 compatiable.
+
 ## 1.0.9
 * Add Demo Importer tab
 * Fixed header image

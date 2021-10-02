@@ -1,3 +1,8 @@
+Contributors: Patus
+Requires at least: 5.3
+Tested up to: 5.8
+Requires PHP: 5.6
+Stable tag: 1.1.0
 
 Thank you for downloading Patus Theme!
 
@@ -41,5 +46,13 @@ Source: http://genericons.com/
 License: https://github.com/Automattic/Genericons/blob/master/LICENSE.txt
 
 - Images from Theme Screenshot
-Source: http://pixabay.com/
-License: Free Public Domain (GPL Compatible)
+License: https://www.pexels.com/photo-license/ (http://creativecommons.org/publicdomain/zero/1.0 - CC0)
+Source : https://www.pexels.com/photo/woman-using-macbook-7353/
+
+== Licensing ==
+
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+Patus WordPress Theme, Copyright 2021 FameThemes
+Patus is distributed under the terms of the GNU GPL v3

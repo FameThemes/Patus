@@ -108,19 +108,6 @@ function patus_customize_register( $wp_customize ) {
         'priority' => '4'
     ) );
 
-    /* Google Plus */
-    $wp_customize->add_setting( 'ft_social_google', array(
-        'default'   => '',
-        'transport' => 'refresh',
-        'sanitize_callback' => 'esc_url_raw'
-    ) );
-    $wp_customize->add_control( 'ft_social_google', array(
-        'settings' => 'ft_social_google',
-        'section'  => 'ft_social',
-        'label'    => esc_html__( 'Google Plus Link:', 'patus' ),
-        'priority' => '4'
-    ) );
-
     /* Colors Settings
     --------------------------------------------------------------------------*/
     

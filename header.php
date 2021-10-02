@@ -17,6 +17,14 @@
 </head>
 
 <body <?php body_class(); ?>>
+<?php
+	//wp_body_open hook from WordPress 5.2
+	if ( function_exists( 'wp_body_open' ) ) {
+		wp_body_open();
+	} else {
+		do_action( 'wp_body_open' );
+	}
+?>
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'patus' ); ?></a>
 
@@ -42,13 +50,12 @@
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<div class="container">
 				<button class="menu-toggle"><span class="genericon genericon-menu"></span></button>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+				<?php if ( has_nav_menu('primary') ) { wp_nav_menu( array( 'theme_location' => 'primary' ) ); }  ?>
 				<ul class="nav-social">
 					<?php if ( get_theme_mod('ft_social_rss') != '' ) { echo '<li><a href="'. esc_url( get_theme_mod('ft_social_rss') ) .'"><span class="genericon genericon-feed"></span></a></li>'; } ?>
 					<?php if ( get_theme_mod('ft_social_email') != '' ) { echo '<li><a href="mailto:'. antispambot( get_theme_mod('ft_social_email') ) .'"><span class="genericon genericon-mail"></span></a></li>'; } ?>
 					<?php if ( get_theme_mod('ft_social_twitter') != '' ) { echo '<li><a href="'. esc_url( get_theme_mod('ft_social_twitter') ) .'"><span class="genericon genericon-twitter"></span></a></li>'; } ?>
 					<?php if ( get_theme_mod('ft_social_facebook') != '' ) { echo '<li><a href="'. esc_url( get_theme_mod('ft_social_facebook') ) .'"><span class="genericon genericon-facebook-alt"></span></a></li>'; } ?>
-					<?php if ( get_theme_mod('ft_social_google') != '' ) { echo '<li><a href="'. esc_url( get_theme_mod('ft_social_google') ) .'"><span class="genericon genericon-googleplus-alt"></span></a></li>'; } ?>
 				</ul>
 			</div>
 		</nav><!-- #site-navigation -->
